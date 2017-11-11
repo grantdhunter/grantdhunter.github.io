@@ -1,21 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Grant-Hunter.ca</title>
-    <style>
-      body {
-      background: #263238;
-      }
-                  
-    </style>
-    </head>
-  <body>
-    <svg viewBox="0 0 100 100">
-      <image href="static/gh.svg" width="100%" height="100%"></image>
-    </svg>
+    <link rel="shortcut icon" type="image/ico" href="static/favicon.ico" />
+    <link rel="stylesheet" href="static/flexboxgrid.min.css" type="text/css">
 
-  </body>
+    <style>
+        body {
+            background: #263238;
+        }
+
+        .big-logo {
+            width: 100%;
+            margin: auto;
+        }
+
+        .third-party-link {
+            color: #D9CDC7;
+            text-decoration: none;
+            vertical-align: middle;
+            font-size: 10;
+        }
+
+        .third-party-link img {
+            padding: 1px;
+            width: 30px;
+            margin: 2px;
+            vertical-align: middle;
+            background-color: #f39c12;
+            border: 2px solid black;
+        }
+
+        .round {
+            border-radius: 60%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row center-sm">
+
+
+        <div class="col-sm-offset-3  col-sm-6 col-xs-offset-3 col-xs-6">
+            <div class="box center-sm">
+                <img src="static/gh.svg" class="big-logo" alt="Grant Hunter Logo" />
+            </div>
+            <br>
+        </div>
+
+        <div class="col-sm-3 col-xs-12">
+            <div class="box">
+                <div class="row center-xs">
+
+                    <div class="col-sm-12">
+                        <br>
+                    </div>
+                    <div class="col-xs-6 col-sm-12 end-sm center-xs">
+                        <a href="https://github.com/grantdhunter" class="third-party-link" target="_blank">
+                            <img src="static/icons/mark-github.svg" class="round"></img> grantdhunter
+                        </a>
+
+                    </div>
+                    <div class="col-xs-6 col-sm-12 end-sm center-xs">
+                        <a href="https://www.linkedin.com/in/grant-hunter-6b955b72/" class="third-party-link" target="_blank">
+                            <img src="static/icons/linked-in.png"></img> Grant Hunter
+                        </a>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
 </html>
