@@ -10,34 +10,43 @@
     <meta name="robots" content="index, follow">
     <meta name="web_author" content="Grant Hunter">
     <meta name="language" content="English">
-    
+
     <title>Grant-Hunter.ca</title>
     <link rel="shortcut icon" type="image/ico" href="static/favicon.ico" />
-<!-- Google Analytics -->
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-55004918-1', 'auto');
-ga('send', 'pageview');
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-<!-- End Google Analytics -->
+    <!-- Google Analytics -->
+    <script>
+        window.ga = window.ga || function() {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'UA-55004918-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
 
-    
+
     <link rel="stylesheet" href="static/flexboxgrid.min.css" type="text/css">
 
     <style>
         body {
             background: #263238;
+            color: #D9CDC7;
+            padding: 32px
         }
+
+        a {
+            color: #D9CDC7;
+            text-decoration: none;
+        }
+
 
         .big-logo {
             width: 100%;
             margin: auto;
         }
 
-        .third-party-link {
-            color: #D9CDC7;
-            text-decoration: none;
+        .third-party-link {          
             vertical-align: middle;
             font-size: 10;
         }
@@ -55,6 +64,10 @@ ga('send', 'pageview');
             border-radius: 60%;
         }
 
+        .talks a {
+            color:  #f39c12;
+        }
+        
         .hidden {
             display: none;
         }
@@ -66,11 +79,11 @@ ga('send', 'pageview');
 
 
         <div class="col-sm-offset-3  col-sm-6 col-xs-offset-3 col-xs-6">
-          <div class="box center-sm">
-            <a href="/">
-              <img src="static/gh.svg" class="big-logo" alt="Grant Hunter Logo" />
-            </a>
-            <h1 class="hidden">Grant Hunter</h1>
+            <div class="box center-sm">
+                <a href="/">
+                    <img src="static/gh.svg" class="big-logo" alt="Grant Hunter Logo" />
+                </a>
+                <h1 class="hidden">Grant Hunter</h1>
             </div>
             <br/>
         </div>
@@ -84,13 +97,13 @@ ga('send', 'pageview');
                     </div>
                     <div class="col-xs-6 col-sm-12 end-sm center-xs">
                         <a href="https://github.com/grantdhunter" class="third-party-link" target="_blank">
-                            <img src="static/icons/mark-github.svg" class="round" alt="github"/> grantdhunter
+                            <img src="static/icons/mark-github.svg" class="round" alt="github" /> grantdhunter
                         </a>
 
                     </div>
                     <div class="col-xs-6 col-sm-12 end-sm center-xs">
                         <a href="https://www.linkedin.com/in/grant-hunter-6b955b72/" class="third-party-link" target="_blank">
-                            <img src="static/icons/linked-in.png" alt="linkedIn"/> Grant Hunter
+                            <img src="static/icons/linked-in.png" alt="linkedIn" /> Grant Hunter
                         </a>
 
                     </div>
@@ -103,6 +116,35 @@ ga('send', 'pageview');
 
 
     </div>
+
+    <div class="row center-sm">
+        <div class="col-sm">
+            <div class="box talks">
+                <h1>Talks</h1>
+
+
+                <div class="row center-sm">
+                    <div class="col-xs">
+                        <div class="box">
+                          <h3>Go Plugin Talk</h3>
+                          <a href="https://github.com/grantdhunter/go_plugin_talk">https://github.com/grantdhunter/go_plugin_talk</a>
+                        </div>
+                    </div>
+               
+               
+                    <div class="col-xs">
+                        <div class="box">
+                          <h3>Rust on Android</h3>
+                           <a href="https://github.com/grantdhunter/rust_on_android_talk">https://github.com/grantdhunter/rust_on_android_talk</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
