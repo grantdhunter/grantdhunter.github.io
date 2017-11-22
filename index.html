@@ -23,6 +23,7 @@
       gtag('js', new Date());
       
       gtag('config', 'UA-55004918-1');
+
     </script>
 
     <link rel="stylesheet" href="static/flexboxgrid.min.css" type="text/css">
@@ -147,7 +148,25 @@
             </div>
         </div>
     </div>
+    <script>
 
+      var elements = document.getElementsByTagName('a');
+      for (var i = 0; i < elements.length; i++) {
+          var el = elements[i];
+          
+          if( el.href.indexOf('http') > -1){
+              el.addEventListener('click', function(e) {
+                  gTag('send', 'event', 'outbound', 'click', 'url', {
+                      transport: 'beacon',
+                      hitCallback: function(){
+                          document.location = url;
+                      }
+                  })
+              });
+          }
+      }
+
+    </script>
 </body>
 
 </html>
