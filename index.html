@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,19 +12,6 @@
 
     <title>Grant-Hunter.ca</title>
     <link rel="shortcut icon" type="image/ico" href="static/favicon.ico" />
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55004918-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      
-      gtag('config', 'UA-55004918-1');
-
-    </script>
-
     <link rel="stylesheet" href="static/flexboxgrid.min.css" type="text/css">
 
     <style>
@@ -46,7 +32,7 @@
             margin: auto;
         }
 
-        .third-party-link {          
+        .third-party-link {
             vertical-align: middle;
             font-size: 10;
         }
@@ -67,7 +53,7 @@
         .talks a {
             color:  #f39c12;
         }
-        
+
         .hidden {
             display: none;
         }
@@ -95,20 +81,21 @@
                     <div class="col-sm-12">
                         <br/>
                     </div>
-                    <div class="col-xs-6 col-sm-12 end-sm center-xs">
+                    <div class="col-xs-6 col-sm-12 end-sm center-xs" style="text-align: left;">
                         <a href="https://github.com/grantdhunter" class="third-party-link" target="_blank" rel="noopener noreffer">
                             <img src="static/icons/mark-github.svg" class="round" alt="github" /> grantdhunter
                         </a>
-
                     </div>
-                    <div class="col-xs-6 col-sm-12 end-sm center-xs">
+                    <div class="col-xs-6 col-sm-12 end-sm center-xs" style="text-align: left;">
                         <a href="https://www.linkedin.com/in/grant-hunter-6b955b72/" class="third-party-link" target="_blank" rel="noopener noreffer">
                             <img src="static/icons/linked-in.png" alt="linkedIn" /> Grant Hunter
                         </a>
-
                     </div>
-
-
+                    <div class="col-xs-6 col-sm-12 end-sm center-xs" style="text-align: left;">
+                        <a href="https://matrix.to/#/@grant:goatchat.ca" class="third-party-link" target="_blank" rel="noopener noreffer">
+                            <img src="static/icons/matrix-logo.svg" alt="Matrix" style="height: 19px; padding: 5px;"/> @grant:goatchat.ca
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -117,56 +104,5 @@
 
     </div>
 
-    <div class="row center-sm">
-        <div class="col-sm">
-            <div class="box talks">
-                <h1>Talks</h1>
-
-
-                <div class="row center-sm">
-                    <div class="col-xs">
-                        <div class="box">
-                          <h3>Go Plugin Talk</h3>
-                          <a href="https://github.com/grantdhunter/go_plugin_talk" target="_blank" rel="noopener noreffer"
-                             >https://github.com/grantdhunter/go_plugin_talk
-                          </a>
-                        </div>
-                    </div>
-               
-               
-                    <div class="col-xs">
-                        <div class="box">
-                          <h3>Rust on Android</h3>
-                          <a href="https://github.com/grantdhunter/rust_on_android_talk" target="_blank" rel="noopener noreffer">
-                            https://github.com/grantdhunter/rust_on_android_talk
-                          </a>
-                        </div>
-                    </div>
-                </div>
-
-                
-            </div>
-        </div>
-    </div>
-    <script>
-
-      var elements = document.getElementsByTagName('a');
-      for (var i = 0; i < elements.length; i++) {
-          var el = elements[i];
-          
-          if( el.href.indexOf('http') > -1){
-              el.addEventListener('click', function(e) {
-                  gTag('send', 'event', 'outbound', 'click', 'url', {
-                      transport: 'beacon',
-                      hitCallback: function(){
-                          document.location = url;
-                      }
-                  })
-              });
-          }
-      }
-
-    </script>
 </body>
-
 </html>
