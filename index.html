@@ -1,108 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Grant Hunter's internet home, where at some point he might talk about software developmet and neat technology.">
-    <meta name="keywords" content="Grant Hunter, Software Developer">
-    <meta name="robots" content="index, follow">
-    <meta name="web_author" content="Grant Hunter">
-    <meta name="language" content="English">
-
-    <title>Grant-Hunter.ca</title>
-    <link rel="shortcut icon" type="image/ico" href="static/favicon.ico" />
-    <link rel="stylesheet" href="static/flexboxgrid.min.css" type="text/css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Defend Canada</title>
     <style>
         body {
-            background: #263238;
-            color: #D9CDC7;
-            padding: 32px
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            min-height: 100vh;
+            margin: 0;
+            padding-bottom: 2rem;
+            font-family: Arial, sans-serif;
+            background-image: url('Flag_of_Alberta.svg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
-
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 3rem;
+            margin: 1rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+            border: 3px solid rgba(0, 0, 0, 0.2);
+            max-width: 900px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 4rem;
+            color: #184484;
+            text-align: center;
+            margin-bottom: 2rem;
+            margin-top: 0;
+        }
         a {
-            color: #D9CDC7;
+            font-size: 1.5rem;
+            color: #ffffff;
             text-decoration: none;
+            border: 3px solid #ffffff;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            background-color: rgba(213, 43, 30, 0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            transition: background-color 0.3s, transform 0.2s;
+            font-weight: bold;
         }
-
-
-        .big-logo {
-            width: 100%;
-            margin: auto;
-        }
-
-        .third-party-link {
-            vertical-align: middle;
-            font-size: 10;
-        }
-
-        .third-party-link img {
-            padding: 1px;
-            height: 30px;
-            margin: 2px;
-            vertical-align: middle;
-            background-color: #f39c12;
-            border: 2px solid black;
-        }
-
-        .round {
-            border-radius: 60%;
-        }
-
-        .talks a {
-            color:  #f39c12;
-        }
-
-        .hidden {
-            display: none;
+        a:hover {
+            background-color: rgba(213, 43, 30, 1);
+            transform: scale(1.05);
         }
     </style>
 </head>
-
 <body>
-    <div class="row center-sm">
-
-
-        <div class="col-sm-offset-3  col-sm-6 col-xs-offset-3 col-xs-6">
-            <div class="box center-sm">
-                <a href="/">
-                    <img src="static/gh.svg" class="big-logo" alt="Grant Hunter Logo" />
-                </a>
-                <h1 class="hidden">Grant Hunter</h1>
-            </div>
-            <br/>
-        </div>
-
-        <div class="col-sm-3 col-xs-12">
-            <div class="box">
-                <div class="row center-xs">
-
-                    <div class="col-sm-12">
-                        <br/>
-                    </div>
-                    <div class="col-xs-6 col-sm-12 end-sm center-xs" style="text-align: left;">
-                        <a href="https://github.com/grantdhunter" class="third-party-link" target="_blank" rel="noopener noreffer">
-                            <img src="static/icons/mark-github.svg" class="round" alt="github" /> grantdhunter
-                        </a>
-                    </div>
-                    <div class="col-xs-6 col-sm-12 end-sm center-xs" style="text-align: left;">
-                        <a href="https://www.linkedin.com/in/grant-hunter-6b955b72/" class="third-party-link" target="_blank" rel="noopener noreffer">
-                            <img src="static/icons/linked-in.png" alt="linkedIn" /> Grant Hunter
-                        </a>
-                    </div>
-                    <div class="col-xs-6 col-sm-12 end-sm center-xs" style="text-align: left;">
-                        <a href="https://matrix.to/#/@grant:goatchat.ca" class="third-party-link" target="_blank" rel="noopener noreffer">
-                            <img src="static/icons/matrix-logo.svg" alt="Matrix" style="height: 19px; padding: 5px;"/> @grant:goatchat.ca
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
+    <div class="content-box">
+        <h1>I Support a United Canada</h1>
+        <a href="https://www.forever-canadian.ca/">Forever Canadian</a>
     </div>
-
 </body>
 </html>
